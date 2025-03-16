@@ -3,7 +3,7 @@ import { userAuthorContextObj } from '../../contexts/UserAuthorContext'
 import { useUser } from '@clerk/clerk-react'
 import axios from 'axios'
 import { useNavigate } from 'react-router-dom'
-
+import './Home.css'
 function Home() {
   const { currentUser, setCurrentUser } = useContext(userAuthorContextObj)
 
@@ -87,12 +87,17 @@ function Home() {
   return (
     <div className='container'>
       {
-        isSignedIn === false && <div>
-          <p className="lead">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veniam neque consequatur nemo, enim expedita alias nobis iste obcaecati, eum dolor deserunt voluptatum odio aperiam, officiis sequi voluptates molestias atque sint?</p>
-          <p className="lead">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veniam neque consequatur nemo, enim expedita alias nobis iste obcaecati, eum dolor deserunt voluptatum odio aperiam, officiis sequi voluptates molestias atque sint?</p>
-          <p className="lead">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veniam neque consequatur nemo, enim expedita alias nobis iste obcaecati, eum dolor deserunt voluptatum odio aperiam, officiis sequi voluptates molestias atque sint?</p>
-
+        isSignedIn === false && <div className="home-section">
+        <div className="overlay"></div>
+        <div className="content">
+          <h1 className="title">Your Blog, Your Voice</h1>
+          <p className="description">
+            Express yourself with BlogApp—an easy-to-use platform for authors and readers.  
+            Write, share, and engage with a global audience.
+          </p>
+          <button className="cta-button">Get Started</button>
         </div>
+      </div>
       }
 
       {
