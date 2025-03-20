@@ -1,4 +1,4 @@
-/* Home Section */
+
 .home-section {
   position: relative;
   width: 100%;
@@ -13,7 +13,7 @@
   overflow: hidden;
 }
 
-/* Overlay Effect */
+
 .overlay {
   position: absolute;
   top: 0;
@@ -24,7 +24,7 @@
   backdrop-filter: blur(5px);
 }
 
-/* Content Box (Glassmorphism Effect) */
+
 .content {
   position: relative;
   z-index: 1;
@@ -38,7 +38,7 @@
   animation: fadeInUp 1s ease-in-out;
 }
 
-/* Title Styling */
+
 .title {
   font-size: 3.5rem;
   font-weight: bold;
@@ -47,7 +47,7 @@
   font-family: 'Poppins', sans-serif;
 }
 
-/* Description */
+
 .description {
   font-size: 1.3rem;
   margin-top: 15px;
@@ -55,7 +55,7 @@
   font-family: 'Poppins', sans-serif;
 }
 
-/* Call to Action Button */
+
 .cta-button {
   margin-top: 25px;
   padding: 12px 24px;
@@ -76,7 +76,7 @@
   box-shadow: 0 6px 20px rgba(238, 9, 121, 0.4);
 }
 
-/* Fade-in Animation */
+
 @keyframes fadeInUp {
   from {
     opacity: 0;
@@ -88,7 +88,7 @@
   }
 }
 
-/* Responsive Design */
+
 @media (max-width: 768px) {
   .title {
     font-size: 2.5rem;
