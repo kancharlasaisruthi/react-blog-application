@@ -92,7 +92,7 @@ function Home() {
         <div className="content">
           <h1 className="title">Your Blog, Your Voice</h1>
           <p className="description">
-            Express yourself with BlogApp—an easy-to-use platform for authors and readers.  
+            Express yourself with BlogApp—an easy-to-use platform for authors and readers.
             Write, share, and engage with a global audience.
           </p>
           <button className="cta-button">Get Started</button>
